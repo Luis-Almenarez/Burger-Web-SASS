@@ -1,0 +1,133 @@
+@use "./variables";
+
+.contenedor-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background-color: variables.$color-secundario;
+}
+
+.contenedor-8__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+  gap: 3rem;
+}
+
+.contenedor-8__text h3 {
+  font-size: 5rem;
+  color: variables.$color-principal;
+}
+
+.contenedor-8__text p {
+  text-align: center;
+  width: 50%;
+  font-size: 2rem;
+  color: variables.$color-principal;
+}
+
+.contenedor-8__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contenedor-8__input input {
+  border: none;
+  outline: none;
+  width: 30%;
+  height: 5rem;
+  border-radius: 2rem 0 0 2rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+
+.contenedor-8__input button {
+  border: none;
+  height: 5rem;
+  width: 10%;
+  background-color: variables.$color-principal;
+  border-radius: 0 2rem 2rem 0;
+  font-size: 2rem;
+  color: variables.$color-light;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+.contenedor-8__input button:hover {
+  cursor: pointer;
+  color: variables.$color-principal;
+  background-color: variables.$color-terciario;
+}
+
+@media (max-width: 850px) {
+  .contenedor-8__text h3 {
+    font-size: 4rem;
+  }
+
+  .contenedor-8__input button {
+    border: none;
+    height: 5rem;
+    width: 15%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-8__input button {
+    border: none;
+    height: 5rem;
+    width: 15%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .contenedor-8__text h3 {
+    font-size: 3rem;
+  }
+
+  .contenedor-8__input input {
+    width: 40%;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+
+  .contenedor-8__input button {
+    height: 5rem;
+    width: 15%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-8__text h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contenedor-8__text p {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .contenedor-8__input input {
+    width: 50%;
+    height: 5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .contenedor-8__input button {
+    height: 5rem;
+    width: 20%;
+    font-size: 0.9rem;
+  }
+}

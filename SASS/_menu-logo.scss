@@ -1,0 +1,115 @@
+@use "./variables";
+
+#contenedor-1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/banner_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.contenedor-1__header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+.contenedor-1__header__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-1__header__logo {
+  display: flex;
+  width: 15%;
+  justify-content: start;
+  align-items: center;
+  padding-left: 3.5rem;
+}
+
+.contenedor-1__header__menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 85%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-right: 5rem;
+  text-transform: uppercase;
+}
+
+.contenedor-1__header__menu__link {
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: variables.$color-light;
+  transition: all 300ms;
+}
+
+.contenedor-1__header__menu__link:hover {
+  background-color: variables.$color-principal;
+  color: variables.$color-terciario;
+}
+
+/*****MEDIA QUERIES*****/
+
+@media (max-width: 640px) {
+  .contenedor-1__header {
+    justify-content: center;
+    flex-direction: column;
+    height: 20%;
+  }
+  .contenedor-1__header__logo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contenedor-1__header__logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor-1__header__menu {
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #contenedor-1 {
+    background-size: cover;
+  }
+
+  .contenedor-1__header {
+    flex-direction: column;
+    height: 20%;
+  }
+
+  .contenedor-1__header__logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contenedor-1__header__logo {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .contenedor-1__header__menu {
+    justify-content: center;
+  }
+
+  .contenedor-1__header__menu__link {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+}

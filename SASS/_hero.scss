@@ -1,0 +1,118 @@
+@use "./variables";
+
+.contenedor-1__hero {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 60%;
+  height: 70%;
+  color: variables.$color-light;
+}
+
+.contenedor-1__hero h1 {
+  font-size: 8rem;
+  padding-left: 4rem;
+}
+
+.contenedor-1__hero p {
+  width: 70%;
+  font-size: 2.5rem;
+  padding-left: 4rem;
+}
+
+.contenedor-1__hero a {
+  text-decoration: none;
+  color: variables.$color-light;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  background-color: variables.$color-principal;
+  border-radius: 2.3rem;
+  padding: 1rem;
+  width: 20%;
+  margin-left: 4rem;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+.contenedor-1__hero a:hover {
+  color: variables.$color-terciario;
+  background-color: variables.$color-light;
+}
+
+/************MEDIA QUERIES*********/
+@media (max-width: 1024px) {
+  .contenedor-1__hero {
+    width: 70%;
+  }
+  .contenedor-1__hero a {
+    font-size: 2rem;
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-1__hero {
+    width: 70%;
+  }
+  .contenedor-1__hero h1 {
+    width: auto;
+    font-size: 6rem;
+    padding-left: 3rem;
+  }
+
+  .contenedor-1__hero p {
+    width: 80%;
+    font-size: 3rem;
+    padding-left: 3rem;
+  }
+
+  .contenedor-1__hero a {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 630px) {
+  .contenedor-1__hero {
+    width: 90%;
+    align-items: center;
+  }
+  .contenedor-1__hero h1 {
+    text-align: center;
+    width: 90%;
+    font-size: 6.5rem;
+    padding-left: 3rem;
+  }
+  .contenedor-1__hero p {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+  }
+  .contenedor-1__hero a {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-1__hero {
+    align-items: center;
+    width: 100%;
+  }
+
+  .contenedor-1__hero h1 {
+    text-align: center;
+    font-size: 5.5rem;
+    padding: 0;
+  }
+
+  .contenedor-1__hero p {
+    font-size: 2.3rem;
+    margin: 4rem 0 auto;
+    padding: 0;
+  }
+
+  .contenedor-1__hero a {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin: 3rem 0 auto;
+  }
+}
