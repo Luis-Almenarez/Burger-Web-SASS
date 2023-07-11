@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="./public/bundle.css" as="style" />
     <link rel="stylesheet" href="./public/bundle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      crossorigin="crossorigin"
+      as="font"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <title>Burger Web SASS</title>
   </head>
   <body>
@@ -58,17 +66,29 @@
         </article>
         <article class="contenedor-2__chefs">
           <div class="contenedor-2__chefs_chef1">
-            <img src="./img/foto_2.png" alt="Chef Carlos Gonzales" />
+            <img
+              loading="lazy"
+              src="./img/foto_2.png"
+              alt="Chef Carlos Gonzales"
+            />
             <h3>Carlos Gonzales</h3>
             <p>Fundador</p>
           </div>
           <div class="contenedor-2__chefs_chef2">
-            <img src="./img/foto_3.png" alt="Chef Ethely Garcia" />
+            <img
+              loading="lazy"
+              src="./img/foto_3.png"
+              alt="Chef Ethely Garcia"
+            />
             <h3>Ethely Garcia</h3>
             <p>Co-Fundador</p>
           </div>
           <div class="contenedor-2__chefs_chef3">
-            <img src="./img/foto_4.png" alt="Chef Fannio Vorda" />
+            <img
+              loading="lazy"
+              src="./img/foto_4.png"
+              alt="Chef Fannio Vorda"
+            />
             <h3>Fannio Vorda</h3>
             <p>Co-Fundador</p>
           </div>
@@ -79,7 +99,11 @@
       <!-- SECCIÓN HAMBURGUESAS -->
       <section class="contenedor-3">
         <article class="contedor-3__burger">
-          <img src="./img/burger_1.png" alt="Best Burger image" />
+          <img
+            loading="lazy"
+            src="./img/burger_1.png"
+            alt="Best Burger image"
+          />
         </article>
         <article class="contedor-3__burger__text">
           <h3>El mejor Burger</h3>
@@ -94,7 +118,11 @@
       </section>
       <section class="contenedor-4">
         <article class="contedor-3__burger active">
-          <img src="./img/burger_2.png" alt="Giant Burger image" />
+          <img
+            loading="lazy"
+            src="./img/burger_2.png"
+            alt="Giant Burger image"
+          />
         </article>
         <article class="contedor-3__burger__text active">
           <h3>Burger Gigante</h3>
@@ -147,7 +175,7 @@
           </div>
           <div class="contenedor-6__tarjeta">
             <p class="contenedor-6__tarjeta titlee">Promoción ii</p>
-            <img src="./img/Icon.png" alt="Logo Burger" />
+            <img loading="lazy" src="./img/Icon.png" alt="Logo Burger" />
             <p class="contenedor-6__tarjeta precio">$ 20.000</p>
             <p class="contenedor-6__tarjeta descripcion">
               Suspendisse in tincidunt augue, et laoreet neque.
@@ -156,7 +184,7 @@
           </div>
           <div class="contenedor-6__tarjeta">
             <p class="contenedor-6__tarjeta titlee">Promoción iii</p>
-            <img src="./img/Icon.png" alt="Logo Burger" />
+            <img loading="lazy" src="./img/Icon.png" alt="Logo Burger" />
             <p class="contenedor-6__tarjeta precio">$ 30.000</p>
             <p class="contenedor-6__tarjeta descripcion">
               Suspendisse in tincidunt augue, et laoreet neque.
@@ -241,7 +269,10 @@
           </p>
           <div class="redes__sociales">
             <a href="https://www.instagram.com/luis_carlos_ap/" target="_blank"
-              ><img src="./img/Instagram.png" alt="Logo Instagram"
+              ><img
+                loading="lazy"
+                src="./img/Instagram.png"
+                alt="Logo Instagram"
             /></a>
             <a
               href="https://www.facebook.com/Luis.Carlos.AlmenarezAP"
@@ -249,9 +280,11 @@
               ><img src="./img/Facebook.png" alt="Logo Facebook"
             /></a>
             <a href="https://twitter.com/Almeis_Dev" target="_blank"
-              ><img src="./img/Twitter.png" alt="Logo Twitter"
+              ><img loading="lazy" src="./img/Twitter.png" alt="Logo Twitter"
             /></a>
-            <a href="#"><img src="./img/WhatsApp.png" alt="Logo WhatsApp" /></a>
+            <a href="#"
+              ><img loading="lazy" src="./img/WhatsApp.png" alt="Logo WhatsApp"
+            /></a>
           </div>
         </div>
         <div class="box2">
